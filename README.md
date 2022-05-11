@@ -39,3 +39,7 @@ This software has no tests written for it.
 * GET - Returns the entire outlet table from the dataset and returns it to the user.
 * POST - Takes in six inputs from the user: Outlet ID, Outlet Name, Outlet Address, Outlet City, Outlet State, and Outlet Zipcode. The corresponding keys to these inputs are: "outID", "outName", "outAddress", "outCity", "outState", and "outZip". With these six inputs, a new record is created in the outlet table.  The Outlet ID needs to be unique, the Outlet State can only be two characters long, and the Outlet Zipcode can only take in integers.
 * DELETE - Takes in one input from the user: Outlet ID.  The corresponding key to this input is "outID".  With this single input, a record with an outlet ID that matches the input will be deleted from the outlet table.
+
+/songList - API route for retrieving artist name based on the name of the song that is currently being hosted by a music station.
+* GET - Returns all the artist names and song names of the songs that are currently being hosted by a music station; song names are also accompanied by artist names.
+* POST - Obtains a song name from the user. The key that corresponds with this song name value is "tname". If the song name is currently hosted by a music station (meaning it can be found in the GET for this route) then the artist name and song name will be returned to the user.  Otherwise, nothing is returned.
