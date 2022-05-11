@@ -43,3 +43,8 @@ This software has no tests written for it.
 /songList - API route for retrieving artist name based on the name of the song that is currently being hosted by a music station.
 * GET - Returns all the artist names and song names of the songs that are currently being hosted by a music station; song names are also accompanied by artist names.
 * POST - Obtains a song name from the user. The key that corresponds with this song name value is "tname". If the song name is currently hosted by a music station (meaning it can be found in the GET for this route) then the artist name and song name will be returned to the user.  Otherwise, nothing is returned.
+
+/tracks - API route for retrieving tracks that are in the spotify.
+* GET - Returns all tracks that are in the spotify; track names are also accompanied by popularity.
+* POST - Takes track name from the user to find whether it is in the spotify. If there is the track, it will show the track.
+If not, it will be not returned.

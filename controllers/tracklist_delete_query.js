@@ -1,0 +1,1 @@
+export default 'DELETE FROM tracks WHERE track_id= :track_id';
